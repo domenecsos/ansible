@@ -4,10 +4,3 @@
     - name: Hello Ping Message
       debug:
         msg: "Hello Ping!"
-    - name: bloque
-      block:
-      - name: Hacer ping a los servers
-        ansible.builtin.ping:
-      rescue:
-      - name: Forzar finalizacion del playbook
-        meta: end_play
