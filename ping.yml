@@ -4,3 +4,7 @@
     - name: Hello Ping Message
       debug:
         msg: "Hello Ping!"
+    - name: Hacer ping a los servers
+      debug:
+        msg: "Pingando!"
+      ansible.builtin.ping:
