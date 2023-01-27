@@ -1,9 +1,9 @@
 - name: Pinganillo
   hosts: all
   tasks:
+    - name: Hacer ping a los servers
+      ansible.builtin.ping:
+        data: pinganillo
     - name: Hello Ping Message
       debug:
         msg: "Hello Ping!"
-    - name: Hacer ping a los servers
-      ansible.builtin.ping:
-        data: pinganillo
