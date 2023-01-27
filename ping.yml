@@ -6,3 +6,4 @@
         msg: "Hello Ping!"
     - name: Hacer ping a los servers
       ansible.builtin.ping:
+        data: pinganillo
